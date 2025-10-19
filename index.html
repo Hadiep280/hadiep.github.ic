@@ -7,124 +7,119 @@
 <style>
 body {
 font-family: 'Noto Sans TC', sans-serif;
-background: #f6f8fb;
+background: #f4f6f9;
 margin: 0;
-padding: 20px;
+padding: 30px;
 }
-
 .resume {
 max-width: 900px;
 margin: auto;
 background: white;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 overflow: hidden;
 }
-
-header {
+.header {
 display: flex;
-justify-content: space-between;
 align-items: center;
+padding: 20px 30px;
+border-bottom: 1px solid #eee;
 background: #fff;
-padding: 20px;
-border-bottom: 1px solid #e0e0e0;
 }
-
-header h1 {
-font-size: 20px;
+.header h1 {
+font-size: 22px;
 margin: 0;
+flex: 1;
+color: #333;
 }
-
-header .buttons button {
+.header button {
 background: #0078d7;
 border: none;
 color: white;
-padding: 6px 14px;
+padding: 8px 16px;
 border-radius: 6px;
-margin-left: 8px;
 cursor: pointer;
 font-size: 14px;
 }
-
 .top {
 display: flex;
+padding: 25px 30px;
 flex-wrap: wrap;
-padding: 20px;
 }
-
 .left {
-flex: 1 1 40%;
-min-width: 250px;
-padding: 10px;
-border-right: 1px solid #f0f0f0;
+width: 220px;
 text-align: center;
+margin-right: 30px;
 }
-
-.right {
-flex: 1 1 60%;
-padding: 10px 20px;
-}
-
-.avatar img {
+.left img {
 width: 120px;
 height: 120px;
 object-fit: cover;
-border-radius: 50%;
-border: 3px solid #0078d7;
+border-radius: 10px;
 margin-bottom: 10px;
 }
-
-.skills span, .lang span, .interest span {
+.left h2 {
+margin: 8px 0 5px;
+font-size: 20px;
+color: #333;
+}
+.left p {
+margin: 3px 0;
+color: #555;
+font-size: 14px;
+}
+.right {
+flex: 1;
+min-width: 300px;
+}
+.info p {
+margin: 4px 0;
+font-size: 14px;
+color: #333;
+}
+h3 {
+color: #0078d7;
+font-size: 16px;
+margin-top: 15px;
+}
+.tags span {
 display: inline-block;
 background: #e8f2ff;
 color: #0078d7;
 border-radius: 8px;
-padding: 5px 10px;
-margin: 4px;
-font-size: 14px;
+padding: 4px 10px;
+margin: 3px;
+font-size: 13px;
 }
-
-h3 {
-color: #333;
-margin-top: 20px;
-border-left: 4px solid #0078d7;
-padding-left: 8px;
-}
-
 section {
-padding: 0 20px 20px 20px;
+padding: 0 30px 25px 30px;
+line-height: 1.8;
+color: #333;
+font-size: 15px;
 }
-
-img {
-width: 100%;
-border-radius: 10px;
-margin: 10px 0;
+ul {
+padding-left: 20px;
 }
-
 footer {
 background: #fafafa;
-text-align: center;
-font-size: 12px;
-color: #777;
-padding: 10px;
 border-top: 1px solid #eee;
+text-align: center;
+color: #777;
+font-size: 13px;
+padding: 10px;
 }
 </style>
 </head>
 <body>
 <div class="resume">
-<header>
+<div class="header">
 <h1>Resume20251011abc · 河氏碧葉</h1>
-<div class="buttons">
 <button onclick="window.print()">列印 / 存為 PDF</button>
 </div>
-</header>
 
 <div class="top">
 <div class="left">
-<div class="avatar">
-<img src="profile.jpg" alt="avatar">
-</div>
+<img src="4A0F09D8-8CB6-4AB9-8FFC-2727E683F2B8.jpeg" alt="profile photo">
 <h2>河氏碧葉</h2>
 <p><strong>學號：</strong>114011128</p>
 <p><strong>學校：</strong>亞洲大學 一年級</p>
@@ -135,7 +130,7 @@ border-top: 1px solid #eee;
 
 <div class="right">
 <h3>技能</h3>
-<div class="skills">
+<div class="tags">
 <span>基礎文書處理</span>
 <span>HTML / CSS / JavaScript（基礎）</span>
 <span>西點 / 基礎烹飪</span>
@@ -143,13 +138,13 @@ border-top: 1px solid #eee;
 </div>
 
 <h3>語言</h3>
-<div class="lang">
+<div class="tags">
 <span>越南語（母語）</span>
 <span>中文（基礎）</span>
 </div>
 
 <h3>興趣</h3>
-<div class="interest">
+<div class="tags">
 <span>繪畫</span>
 <span>運動</span>
 <span>烹飪</span>
@@ -162,7 +157,7 @@ border-top: 1px solid #eee;
 <p>我是亞洲大學一年級學生，熱愛藝術與創作。對繪畫、設計與美感表達有高度興趣，喜歡挑戰新事物。<br>
 目前無正式工作經驗 — 有志於從基礎學習與練習繪畫，不斷提升自己的藝術能力。</p>
 
-<img src="school.jpg" alt="校園照片">
+<img src="school.jpg" alt="校園照片" style="width:100%;border-radius:8px;margin-top:10px;">
 
 <h3>學歷</h3>
 <p>亞洲大學 — 在學中・一年級</p>
@@ -178,10 +173,6 @@ border-top: 1px solid #eee;
 
 <h3>職涯目標</h3>
 <p>希望在未來學習與探索中，不斷累積新的知識與技能，最終成為一位充滿創意與熱情的畫家（Hoạ sĩ）。</p>
-
-<div style="margin-top:15px;">
-<button onclick="window.print()" style="background:#0078d7;color:white;border:none;padding:8px 16px;border-radius:8px;cursor:pointer;">下載 HTML 檔</button>
-</div>
 </section>
 
 <footer>
