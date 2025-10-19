@@ -11,6 +11,7 @@ background: #f4f6f9;
 margin: 0;
 padding: 30px;
 }
+
 .resume {
 max-width: 900px;
 margin: auto;
@@ -19,19 +20,22 @@ border-radius: 12px;
 box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 overflow: hidden;
 }
+
 .header {
 display: flex;
+justify-content: space-between;
 align-items: center;
-padding: 20px 30px;
-border-bottom: 1px solid #eee;
 background: #fff;
+border-bottom: 1px solid #eee;
+padding: 20px 30px;
 }
+
 .header h1 {
 font-size: 22px;
 margin: 0;
-flex: 1;
 color: #333;
 }
+
 .header button {
 background: #0078d7;
 border: none;
@@ -41,65 +45,88 @@ border-radius: 6px;
 cursor: pointer;
 font-size: 14px;
 }
-.top {
+
+.profile {
 display: flex;
-padding: 25px 30px;
+align-items: flex-start;
 flex-wrap: wrap;
+padding: 25px 30px;
+background: #fff;
 }
-.left {
-width: 220px;
-text-align: center;
-margin-right: 30px;
-}
-.left img {
-width: 120px;
-height: 120px;
-object-fit: cover;
+
+.avatar {
+width: 150px;
+height: 150px;
+overflow: hidden;
 border-radius: 10px;
-margin-bottom: 10px;
+border: 3px solid #fff;
+box-shadow: 0 0 6px rgba(0,0,0,0.1);
+margin-right: 25px;
 }
-.left h2 {
-margin: 8px 0 5px;
-font-size: 20px;
-color: #333;
+
+.avatar img {
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
-.left p {
-margin: 3px 0;
-color: #555;
-font-size: 14px;
-}
-.right {
+
+.info {
 flex: 1;
 min-width: 300px;
 }
-.info p {
-margin: 4px 0;
-font-size: 14px;
+
+.info h2 {
+font-size: 22px;
 color: #333;
+margin: 0 0 5px 0;
 }
+
+.info p {
+margin: 3px 0;
+font-size: 14px;
+color: #444;
+}
+
+.section {
+display: flex;
+flex-wrap: wrap;
+padding: 0 30px 30px 30px;
+background: #fff;
+}
+
+.block {
+flex: 1;
+min-width: 220px;
+margin-right: 20px;
+}
+
 h3 {
 color: #0078d7;
 font-size: 16px;
 margin-top: 15px;
 }
+
 .tags span {
 display: inline-block;
 background: #e8f2ff;
 color: #0078d7;
 border-radius: 8px;
-padding: 4px 10px;
+padding: 5px 10px;
 margin: 3px;
 font-size: 13px;
 }
+
 section {
-padding: 0 30px 25px 30px;
+padding: 0 30px 30px 30px;
 line-height: 1.8;
 color: #333;
 font-size: 15px;
 }
+
 ul {
 padding-left: 20px;
 }
+
 footer {
 background: #fafafa;
 border-top: 1px solid #eee;
@@ -117,9 +144,11 @@ padding: 10px;
 <button onclick="window.print()">列印 / 存為 PDF</button>
 </div>
 
-<div class="top">
-<div class="left">
-<img src="4A0F09D8-8CB6-4AB9-8FFC-2727E683F2B8.jpeg" alt="profile photo">
+<div class="profile">
+<div class="avatar">
+<img src="profile.jpg" alt="河氏碧葉照片">
+</div>
+<div class="info">
 <h2>河氏碧葉</h2>
 <p><strong>學號：</strong>114011128</p>
 <p><strong>學校：</strong>亞洲大學 一年級</p>
@@ -127,8 +156,10 @@ padding: 10px;
 <p><strong>電話：</strong>0984-087-979</p>
 <p><strong>地點：</strong>台中市，台灣</p>
 </div>
+</div>
 
-<div class="right">
+<div class="section">
+<div class="block">
 <h3>技能</h3>
 <div class="tags">
 <span>基礎文書處理</span>
@@ -136,13 +167,17 @@ padding: 10px;
 <span>西點 / 基礎烹飪</span>
 <span>團隊合作</span>
 </div>
+</div>
 
+<div class="block">
 <h3>語言</h3>
 <div class="tags">
 <span>越南語（母語）</span>
 <span>中文（基礎）</span>
 </div>
+</div>
 
+<div class="block">
 <h3>興趣</h3>
 <div class="tags">
 <span>繪畫</span>
